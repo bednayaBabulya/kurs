@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header__left">
+      <img class="header__left-logo" src="image/logo.svg" alt="">
+      <div class="header__left-search">
+        <button class="search-btn"><img src="image/lupa.png" alt=""></button>
+        <input class="search-txt" type="text" placeholder="поиск">
+
+      </div>
+
+      <div class="header__left-button">
+        <button class="header__left-button-btn">Покупка</button>
+        <button class="header__left-button-btn-active">Аренда</button>
+        <button class="header__left-button-btn">Строительство</button>
+      </div>
+
+    </div>
+    <div class="header__icons">
+      <div class="header__btn-ac-notif">
+        <button class="header__btn-ac-notif-button"><img class="header__btn-ac-notif-button-img"
+            src="image/notifications.svg" alt=""></button>
+        <div class="notifications notif-btn-header none">
+          <h3>Уведомления</h3>
+          <div class="notif-line"></div>
+          <p class="notif-txt">пока нет уведомлений</p>
+        </div>
+      </div>
+      <a href="profile.html" class="header__btn-ac-ms"><img class="header__icons-img" src="image/messages.svg" alt=""></a>
+      <a href="profile.html"><img class="header__icons-img" src="image/account.svg" alt=""></a>
+    </div>
+  </div>
+  <section class="cover">
+    <div class="container">
+      <div class="cover__previw-textLeft">
+        <div class="cover__previw-textLeft-swipe">
+          <h2 class="cover__previw-textLeft-text-slogo">
+            Простота и качество? Только у нас!
+          </h2>
+          <h1 class="cover__previw-textLeft-text-mode">
+            Аренда
+          </h1>
+          <div class="cover__previw-textLeft-video">
+            <img src="image/videoIcon.svg" alt="" class="cover__previw-textLeft-text-video-img">
+            <h3 class="cover__previw-textLeft-text-video-icon">
+              Видеообзор
+            </h3>
+          </div>
+        </div>
+        <h1 class="cover__previw-textLeft-swipe-str">Строительство</h1>
+
+        <div class="cover__previw-textLeft-button">
+          <a id="asrt" href="asrt.html">Ассортримент</a>
+
+          <div class="cov__prev-btn-str none">
+            
+            <div class="boxImgAsr">
+              <div class="boxImgAsrObl">
+                <button class="boxImgAsrObl__btn">Подробнее</button>
+                <div class="boxImgAsrOblBl"><!-- <p>дом из бруса</p> --></div>
+                <img class="boxImgAsrEd" src="image/houseBrus.svg" alt="">
+              </div>
+              <div class="boxImgAsrObl">
+                <button class="boxImgAsrObl__btn">Подробнее</button>
+                <div class="boxImgAsrOblBl"></div>
+                <img class="boxImgAsrEd" src="image/houseBrevno.svg" alt="">
+              </div>
+            </div>
+
+            <div class="boxImgAsr">
+              <div class="boxImgAsrObl">
+                <button class="boxImgAsrObl__btn">Подробнее</button>
+                <div class="boxImgAsrOblBl"></div>
+                <img class="boxImgAsrEd" src="image/houseKarkas.svg" alt="">
+              </div>
+              <div class="boxImgAsrObl">
+                <button class="boxImgAsrObl__btn">Подробнее</button>
+                <div class="boxImgAsrOblBl"></div>
+                <img class="boxImgAsrEd" src="image/houseKleeniy.svg" alt="">
+              </div>
+
+            </div>
+
+            <div class="boxImgAsr">
+              <div class="boxImgAsrObl">
+                <button class="boxImgAsrObl__btn">Подробнее</button>
+                <div class="boxImgAsrOblBl"></div>
+                <img class="boxImgAsrEd" src="image/houseBarnhause.svg" alt="">
+              </div>
+              <div class="boxImgAsrObl">
+                <button class="boxImgAsrObl__btn">Подробнее</button>
+                <div class="boxImgAsrOblBl"></div>
+                <img class="boxImgAsrEd" src="image/houseKamen.svg" alt="">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="garage">
+        <img src="image/garageArenda.png" alt="" class="cover__garage">
+      </div>
+      <div class="cover__vector">
+        <div class="cover__vector-vector-arenda"></div>
+      </div>
+
+    </div>
+  </section>
+  <section class="main">
+    <div class="container">
+      <div class="main__left">
+        <div class="main__blur"></div>
+        <p class="main__left-heading">Здесь вы можете найти гараж вблизи к дому!</p>
+        <div class="main__left-filter">
+          <p class="main__left-text">Для этого помогите нам и отсортируйте поиск</p>
+          <div class="main__left-filter-modal">
+            <button class="main__left-filter-modal-button">
+              Фильтры
+            </button>
+
+            <div class="main__left-filter-modal-button-window">
+              <p class="main__left-filter-modal-button-window-text">Фильтры</p>
+              <div class="main__left-filter-modal-button-window-line"></div>
+              <div class="main__left-filter-modal-button-window-filterMode filter__text">
+                <div class="main__left-filter-modal-button-window-filterMode-metro filter-mode">
+                  <div class="filter__text-top">
+                    <p class="filter__text">До метро</p>
+                  </div>
+                  <button class="filter__text filter__text-mt filter-button-active filter-left-top">Неважно</button>
+                  <button class="filter__text filter__text-mt filter-button">Пешком</button>
+                  <button class="filter__text filter__text-mt filter-button">Транспортом</button>
+                </div>
+                <div class="main__left-filter-modal-button-window-filterMode-type filter-mode">
+                  <div class="filter__text-top">
+                    <p class="filter__text">Тип</p>
+                  </div>
+                  <button class="filter__text filter-button-active filter-left-top">Неважно</button>
+                  <button class="filter__text filter-button">Гараж</button>
+                  <button class="filter__text filter-button">Машноместо</button>
+                </div>
+                <div class="main__left-filter-modal-button-window-filterMode-square filter-mode">
+                  <div class="filter__text-top">
+                    <p class="filter__text">Площадь, м2</p>
+                  </div>
+                  <input type="text" class="filter-left-top">
+                  <p>-</p>
+                  <input type="text">
+                </div>
+                <div class="main__left-filter-modal-button-window-filterMode-camunications filter-mode">
+                  <div class="filter__text-top">
+                    <p class="filter__text">Коммуникации</p>
+                  </div>
+                  <button class="filter__text filter-button-active filter-left-top">Неважно</button>
+                  <button class="filter__text filter-button">Электричество</button>
+                  <button class="filter__text filter-button">Отопление</button>
+                  <button class="filter__text filter-button">Вода</button>
+                </div>
+                <div class="main__left-filter-modal-button-window-filterMode-date filter-mode">
+                  <div class="filter__text-top">
+                    <p class="filter__text">Дата публикации</p>
+                  </div>
+                  <div class="main__left-filter-modal-button-window-filterMode-date-variants filter-left-top">
+                    <button class="filter__text filter-button-data btn-fix">Неважно <img src="image/galka.svg"
+                        alt=""></button>
+                    <div class="main__left-filter-modal-button-window-filterMode-date-variants-window">
+                      <botton id="btn-filter-date1" class="btn-filter-date">Неважно</botton>
+                      <botton class="btn-filter-date">За месяц</botton>
+                      <botton class="btn-filter-date">За неделю</botton>
+                      <botton class="btn-filter-date">За сегодня</botton>
+                      <botton id="btn-filter-date2" class="btn-filter-date">За час</botton>
+                    </div>
+                  </div>
+                  <input type="checkbox">
+                  <p class="filter__text main__left-filter-modal-button-window-filterMode-date-text">
+                    Фото</p>
+                  <input type="checkbox">
+                  <p class="filter__text main__left-filter-modal-button-window-filterMode-date-text">
+                    Видео</p>
+                </div>
+              </div>
+
+              <div class="main__left-filter-modal-button-window-line"></div>
+              <button class="main__left-filter-modal-button-window-button">
+                Применить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="main__left-help">
+          <p class="main__left-text">Если вы хотите связаться с поддержкой</p>
+          <div class="main__left-help-modal">
+            <button class="main__left-help-button">Поддержка</button>
+            <div class="main__left-help-modal-button-window none">
+              <h2>Поддержка</h2>
+              <div class="main__left-filter-modal-button-window-line"></div>
+                <p>Изложите вашу проблему и вам ответят в личных сообщениях</p>
+                <textarea></textarea>
+              <div class="main__left-filter-modal-button-window-line"></div>
+              <button class="main__left-help-modal-button-window-button">
+                Применить
+              </button>
+            </div>
+
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="main__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A64025830e900c20df6a1339d1f8341c6c47d479249b0751c69c501b25f9142ca&amp;source=constructor"
+          width="1071" height="668" frameborder="0"></iframe>
+      </div>
+      <!-- <div class="main__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A64025830e900c20df6a1339d1f8341c6c47d479249b0751c69c501b25f9142ca&amp;width=1071&amp;height=668&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div> -->
+      
+
+    </div>
+  </section>
+  <section class="comments">
+    <div class="container">
+      <h1 class="comments__say">
+        Что говорят о нас покупатели
+      </h1>
+
+      <ul class="comments__spisok">
+        <li>
+          <div class="comments__spisok-element">
+            <div class="comments__spisok-element-profile">
+              <img src="image/profile__comments.svg" alt="">
+            </div>
+            <div class="comments__spisok-element-text">
+              <div class="comments__spisok-element-name">
+                <p id="comments__spisok-element-name-name">Максим Лютый, г. Москва</p>
+                <div>
+                  <p id="comments__spisok-element-name-garage">Гараж <span
+                      id="comments__spisok-element-name-adress">такой_то_адрес</span></p>
+
+                </div>
+              </div>
+
+              <div class="comments__spisok-element-text-zvezda">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+              </div>
+
+              <p class="comments__spisok-element-text-otz">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eum
+                quibusdam illo harum aperiam impedit culpa non accusantium quasi maxime. Eveniet fuga
+                quaerat impedit
+                saepe. Veritatis ipsam consequuntur voluptatem? Illum, unde quod repudiandae eveniet
+                veritatis iusto
+                nobis. Aut error iure ratione doloribus minus nam repudiandae suscipit eligendi ipsa
+                sapiente labore
+                fuga quis, quo aperiam quos ullam vero facere alias. Quo aut quaerat veritatis ea, iure
+                eaque quos
+                nihil! Deserunt, excepturi distinctio placeat eum consectetur maxime nulla nobis sit
+                maiores quasi dicta
+                ex totam eius, enim obcaecati iure accusamus tempore quam asperiores cumque eos
+                eligendi! Quibusdam,
+                incidunt inventore?</p>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comments__spisok-element">
+            <div class="comments__spisok-element-profile">
+              <img src="image/profile__comments.svg" alt="">
+            </div>
+            <div class="comments__spisok-element-text">
+              <div class="comments__spisok-element-name">
+                <p id="comments__spisok-element-name-name">Максим Лютый, г. Москва</p>
+                <div>
+                  <p id="comments__spisok-element-name-garage">Гараж <span
+                      id="comments__spisok-element-name-adress">такой_то_адрес</span></p>
+
+                </div>
+              </div>
+
+              <div class="comments__spisok-element-text-zvezda">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+              </div>
+
+              <p class="comments__spisok-element-text-otz">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eum
+                quibusdam illo harum aperiam impedit culpa non accusantium quasi maxime. Eveniet fuga
+                quaerat impedit
+                saepe. Veritatis ipsam consequuntur voluptatem? Illum, unde quod repudiandae eveniet
+                veritatis iusto
+                nobis. Aut error iure ratione doloribus minus nam repudiandae suscipit eligendi ipsa
+                sapiente labore
+                fuga quis, quo aperiam quos ullam vero facere alias. Quo aut quaerat veritatis ea, iure
+                eaque quos
+                nihil! Deserunt, excepturi distinctio placeat eum consectetur maxime nulla nobis sit
+                maiores quasi dicta
+                ex totam eius, enim obcaecati iure accusamus tempore quam asperiores cumque eos
+                eligendi! Quibusdam,
+                incidunt inventore?</p>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comments__spisok-element">
+            <div class="comments__spisok-element-profile">
+              <img src="image/profile__comments.svg" alt="">
+            </div>
+            <div class="comments__spisok-element-text">
+              <div class="comments__spisok-element-name">
+                <p id="comments__spisok-element-name-name">Максим Лютый, г. Москва</p>
+                <div>
+                  <p id="comments__spisok-element-name-garage">Гараж <span
+                      id="comments__spisok-element-name-adress">такой_то_адрес</span></p>
+
+                </div>
+              </div>
+
+              <div class="comments__spisok-element-text-zvezda">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+              </div>
+
+              <p class="comments__spisok-element-text-otz">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eum
+                quibusdam illo harum aperiam impedit culpa non accusantium quasi maxime. Eveniet fuga
+                quaerat impedit
+                saepe. Veritatis ipsam consequuntur voluptatem? Illum, unde quod repudiandae eveniet
+                veritatis iusto
+                nobis. Aut error iure ratione doloribus minus nam repudiandae suscipit eligendi ipsa
+                sapiente labore
+                fuga quis, quo aperiam quos ullam vero facere alias. Quo aut quaerat veritatis ea, iure
+                eaque quos
+                nihil! Deserunt, excepturi distinctio placeat eum consectetur maxime nulla nobis sit
+                maiores quasi dicta
+                ex totam eius, enim obcaecati iure accusamus tempore quam asperiores cumque eos
+                eligendi! Quibusdam,
+                incidunt inventore?</p>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comments__spisok-element">
+            <div class="comments__spisok-element-profile">
+              <img src="image/profile__comments.svg" alt="">
+            </div>
+            <div class="comments__spisok-element-text">
+              <div class="comments__spisok-element-name">
+                <p id="comments__spisok-element-name-name">Максим Лютый, г. Москва</p>
+                <div>
+                  <p id="comments__spisok-element-name-garage">Гараж <span
+                      id="comments__spisok-element-name-adress">такой_то_адрес</span></p>
+
+                </div>
+              </div>
+
+              <div class="comments__spisok-element-text-zvezda">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+              </div>
+
+              <p class="comments__spisok-element-text-otz">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eum
+                quibusdam illo harum aperiam impedit culpa non accusantium quasi maxime. Eveniet fuga
+                quaerat impedit
+                saepe. Veritatis ipsam consequuntur voluptatem? Illum, unde quod repudiandae eveniet
+                veritatis iusto
+                nobis. Aut error iure ratione doloribus minus nam repudiandae suscipit eligendi ipsa
+                sapiente labore
+                fuga quis, quo aperiam quos ullam vero facere alias. Quo aut quaerat veritatis ea, iure
+                eaque quos
+                nihil! Deserunt, excepturi distinctio placeat eum consectetur maxime nulla nobis sit
+                maiores quasi dicta
+                ex totam eius, enim obcaecati iure accusamus tempore quam asperiores cumque eos
+                eligendi! Quibusdam,
+                incidunt inventore?</p>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comments__spisok-element">
+            <div class="comments__spisok-element-profile">
+              <img src="image/profile__comments.svg" alt="">
+            </div>
+            <div class="comments__spisok-element-text">
+              <div class="comments__spisok-element-name">
+                <p id="comments__spisok-element-name-name">Максим Лютый, г. Москва</p>
+                <div>
+                  <p id="comments__spisok-element-name-garage">Гараж <span
+                      id="comments__spisok-element-name-adress">такой_то_адрес</span></p>
+
+                </div>
+              </div>
+
+              <div class="comments__spisok-element-text-zvezda">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+              </div>
+
+              <p class="comments__spisok-element-text-otz">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eum
+                quibusdam illo harum aperiam impedit culpa non accusantium quasi maxime. Eveniet fuga
+                quaerat impedit
+                saepe. Veritatis ipsam consequuntur voluptatem? Illum, unde quod repudiandae eveniet
+                veritatis iusto
+                nobis. Aut error iure ratione doloribus minus nam repudiandae suscipit eligendi ipsa
+                sapiente labore
+                fuga quis, quo aperiam quos ullam vero facere alias. Quo aut quaerat veritatis ea, iure
+                eaque quos
+                nihil! Deserunt, excepturi distinctio placeat eum consectetur maxime nulla nobis sit
+                maiores quasi dicta
+                ex totam eius, enim obcaecati iure accusamus tempore quam asperiores cumque eos
+                eligendi! Quibusdam,
+                incidunt inventore?</p>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="comments__spisok-element">
+            <div class="comments__spisok-element-profile">
+              <img src="image/profile__comments.svg" alt="">
+            </div>
+            <div class="comments__spisok-element-text">
+              <div class="comments__spisok-element-name">
+                <p id="comments__spisok-element-name-name">Максим Лютый, г. Москва</p>
+                <div>
+                  <p id="comments__spisok-element-name-garage">Гараж <span
+                      id="comments__spisok-element-name-adress">такой_то_адрес</span></p>
+
+                </div>
+              </div>
+
+              <div class="comments__spisok-element-text-zvezda">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+                <img src="image/zvezda.svg" alt="">
+              </div>
+
+              <p class="comments__spisok-element-text-otz">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eum
+                quibusdam illo harum aperiam impedit culpa non accusantium quasi maxime. Eveniet fuga
+                quaerat impedit
+                saepe. Veritatis ipsam consequuntur voluptatem? Illum, unde quod repudiandae eveniet
+                veritatis iusto
+                nobis. Aut error iure ratione doloribus minus nam repudiandae suscipit eligendi ipsa
+                sapiente labore
+                fuga quis, quo aperiam quos ullam vero facere alias. Quo aut quaerat veritatis ea, iure
+                eaque quos
+                nihil! Deserunt, excepturi distinctio placeat eum consectetur maxime nulla nobis sit
+                maiores quasi dicta
+                ex totam eius, enim obcaecati iure accusamus tempore quam asperiores cumque eos
+                eligendi! Quibusdam,
+                incidunt inventore?</p>
+
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="comments__button">
+        <button class="comments__button-left">
+          <img src="image/button__comments-left.svg" alt="">
+        </button>
+        <span class="fraction">1/6</span>
+        <button class="comments__button-right">
+          <img src="image/button__comments-right.svg" alt="">
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="#">Наши контакты</a></li>
+          <li><a href="#">Наши услуги</a></li>
+          <li><a href="#">Политика Конфиденциальности</a></li>
+          <li><a href="#">Правила и условия</a></li>
+          <li><a href="#">Карьера</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        GARAGE Copyright © 2023 Garage - All rights reserved || Designed By: Belyaev
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/main.js"></script>
+  <script src="script/header.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>

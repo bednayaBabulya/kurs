@@ -1,0 +1,56 @@
+@import url("fonts.css");
+@import url("styleScss.css");
+@import url("index/header.css");
+@import url("index/cover.css");
+@import url("index/main.css");
+@import url("index/comments.css");
+@import url("responsiveScss.css");
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: GillSansC, Baskerville, Graphik, Molengo;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media (min-width: 1915px){
+    body {
+        width: 1920px;
+
+    }
+}
+
+.container {
+    height: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    /*     border: 1px solid red; */
+}
+
+input:focus {
+    outline: none;
+}
+
+.none {
+    display: none !important;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}

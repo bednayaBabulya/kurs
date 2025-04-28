@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'GillSans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Crimson Text'),
+		url('/fonts/Gillsansc.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Baskerville';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Baskerville'),
+		url('/fonts/Baskerville-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Graphik';
+    font-style: normal;
+    src: local('Graphik'),
+        url('/fonts/Graphik-Regular.ttf') format('ttf')
+}
+

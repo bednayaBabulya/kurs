@@ -1,0 +1,11 @@
+.mainq {
+  background-color: bisque;
+  width: 100px;
+  height: 50px; }
+  .mainq p {
+    color: red; }
+  .mainq .mainq2 {
+    width: 10px;
+    height: 40px; }
+
+/*# sourceMappingURL=asrt.css.map */

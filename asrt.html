@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ассортримент</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header__left">
+      <a href="index.html"><img class="header__img-pr" src="image/logo.svg" alt=""></a>
+      <div class="header__left-search">
+        <button class="search-btn"><img src="image/lupa.png" alt=""></button>
+        <input class="search-txt" type="text" placeholder="поиск">
+      </div>
+      <div class="header__btn-mode">
+        <a href="#">Аренда</a>
+        <a href="#">Покупка</a>
+      </div>
+    </div>
+    
+    <div class="header__btn-ac">
+        <div class="header__btn-ac-notif">
+          <button class="header__btn-ac-notif-button"><img class="header__btn-ac-notif-button-img" src="image/notifications.svg" alt=""></button>
+          <div class="notifications notif-btn-header none">
+            <h3>Уведомления</h3>
+            <div class="notif-line"></div>
+            <p class="notif-txt">пока нет уведомлений</p>
+          </div>
+        </div>
+        <a href="profile.html"><img src="image/messages.svg" alt=""></a>
+        <a href="profile.html"><img src="image/account.svg" alt=""></a>
+      </div>
+  </header>
+  <section class="poster">
+    <div class="poster__img">
+      <img src="image/poster.svg" alt="">
+    </div>
+    <div class="container">
+      <p>Сними гараж легко</p>
+      <div class="main__left-filter-modal">
+        <div class="main__blur"></div>
+        <button class="main__left-filter-modal-button">
+          Фильтры
+        </button>
+
+        <div class="main__left-filter-modal-button-window">
+          <p class="main__left-filter-modal-button-window-text">Фильтры</p>
+          <div class="main__left-filter-modal-button-window-line"></div>
+          <div class="main__left-filter-modal-button-window-filterMode filter__text">
+            <div class="main__left-filter-modal-button-window-filterMode-metro filter-mode">
+              <div class="filter__text-top">
+                <p class="filter__text">До метро</p>
+              </div>
+              <button class="filter__text filter__text-mt filter-button-active filter-left-top">Неважно</button>
+              <button class="filter__text filter__text-mt filter-button">Пешком</button>
+              <button class="filter__text filter__text-mt filter-button">Транспортом</button>
+            </div>
+            <div class="main__left-filter-modal-button-window-filterMode-type filter-mode">
+              <div class="filter__text-top">
+                <p class="filter__text">Тип</p>
+              </div>
+              <button class="filter__text filter-button-active filter-left-top">Неважно</button>
+              <button class="filter__text filter-button">Гараж</button>
+              <button class="filter__text filter-button">Машноместо</button>
+            </div>
+            <div class="main__left-filter-modal-button-window-filterMode-square filter-mode">
+              <div class="filter__text-top">
+                <p class="filter__text">Площадь, м2</p>
+              </div>
+              <input type="text" class="filter-left-top">
+              <p>-</p>
+              <input type="text">
+            </div>
+            <div class="main__left-filter-modal-button-window-filterMode-camunications filter-mode">
+              <div class="filter__text-top">
+                <p class="filter__text">Коммуникации</p>
+              </div>
+              <button class="filter__text filter-button-active filter-left-top">Неважно</button>
+              <button class="filter__text filter-button">Электричество</button>
+              <button class="filter__text filter-button">Отопление</button>
+              <button class="filter__text filter-button">Вода</button>
+            </div>
+            <div class="main__left-filter-modal-button-window-filterMode-date filter-mode">
+              <div class="filter__text-top">
+                <p class="filter__text">Дата публикации</p>
+              </div>
+              <div class="main__left-filter-modal-button-window-filterMode-date-variants filter-left-top">
+                <button class="filter__text filter-button-data btn-fix">Неважно <img src="image/galka.svg"
+                    alt=""></button>
+                <div class="main__left-filter-modal-button-window-filterMode-date-variants-window">
+                  <botton id="btn-filter-date1" class="btn-filter-date">Неважно</botton>
+                  <botton class="btn-filter-date">За месяц</botton>
+                  <botton class="btn-filter-date">За неделю</botton>
+                  <botton class="btn-filter-date">За сегодня</botton>
+                  <botton id="btn-filter-date2" class="btn-filter-date">За час</botton>
+                </div>
+              </div>
+              <input type="checkbox">
+              <p class="filter__text main__left-filter-modal-button-window-filterMode-date-text">Фото</p>
+              <input type="checkbox">
+              <p class="filter__text main__left-filter-modal-button-window-filterMode-date-text">Видео</p>
+            </div>
+          </div>
+
+          <div class="main__left-filter-modal-button-window-line"></div>
+          <button class="main__left-filter-modal-button-window-button">
+            Применить
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="asrt">
+    <div class="container">
+      <p>Вам могут подойти</p>
+      <div class="asrt__card">
+        <img src="image/cardGarage.svg" alt="">
+
+        <div class="asrt__card-dscr">
+          <a href="">Название.....</a>
+
+          <div class="asrt__card-dscr-pos">
+            <div class="metro-img">
+              <img class="" src="image/metro.png" alt="">
+            </div>
+            <p class="metro">Парнас</p>
+            <img class="metro-time-tchk" src="image/tochka.png" alt="">
+            <p class="metro-time">10 минут пешком</p>
+          </div>
+
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-gl">Сдается машиноместо в новом паркинге ЖК Малая охта.13.25 кв.м, -1 этаж с отдельным въездом с улицы.Прямой и быстрый въезд на место. Круглосуточное видеонаблюдение. Ворота открываются по брелку. Коммунальные платежи включены в стоимость.</p>
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-rub">2400 р</p>
+        </div>
+
+        <div class="asrt__card-cntct">
+          <div class="asrt__card-cntct-info">
+            <img src="image/profile__comments.svg" alt="">
+            <p>Вася Пупкин</p>
+            <a href="">Перейти в профиль</a>
+          </div>
+
+          <div class="asrt__card-cntct-btn">
+            <button class="btn-asrt-one">Позвонить</button>
+            <button class="btn-asrt-two">Написать</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="asrt__card">
+        <img src="image/cardGarage.svg" alt="">
+
+        <div class="asrt__card-dscr">
+          <a href="">Название.....</a>
+
+          <div class="asrt__card-dscr-pos">
+            <div class="metro-img">
+              <img class="" src="image/metro.png" alt="">
+            </div>
+            <p class="metro">Парнас</p>
+            <img class="metro-time-tchk" src="image/tochka.png" alt="">
+            <p class="metro-time">10 минут пешком</p>
+          </div>
+
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-gl">Сдается машиноместо в новом паркинге ЖК Малая охта.13.25 кв.м, -1 этаж с отдельным въездом с улицы.Прямой и быстрый въезд на место. Круглосуточное видеонаблюдение. Ворота открываются по брелку. Коммунальные платежи включены в стоимость.</p>
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-rub">2400 р</p>
+        </div>
+
+        <div class="asrt__card-cntct">
+          <div class="asrt__card-cntct-info">
+            <img src="image/profile__comments.svg" alt="">
+            <p>Вася Пупкин</p>
+            <a href="">Перейти в профиль</a>
+          </div>
+
+          <div class="asrt__card-cntct-btn">
+            <button class="btn-asrt-one">Позвонить</button>
+            <button class="btn-asrt-two">Написать</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="asrt__card">
+        <img src="image/cardGarage.svg" alt="">
+
+        <div class="asrt__card-dscr">
+          <a href="">Название.....</a>
+
+          <div class="asrt__card-dscr-pos">
+            <div class="metro-img">
+              <img class="" src="image/metro.png" alt="">
+            </div>
+            <p class="metro">Парнас</p>
+            <img class="metro-time-tchk" src="image/tochka.png" alt="">
+            <p class="metro-time">10 минут пешком</p>
+          </div>
+
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-gl">Сдается машиноместо в новом паркинге ЖК Малая охта.13.25 кв.м, -1 этаж с отдельным въездом с улицы.Прямой и быстрый въезд на место. Круглосуточное видеонаблюдение. Ворота открываются по брелку. Коммунальные платежи включены в стоимость.</p>
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-rub">2400 р</p>
+        </div>
+
+        <div class="asrt__card-cntct">
+          <div class="asrt__card-cntct-info">
+            <img src="image/profile__comments.svg" alt="">
+            <p>Вася Пупкин</p>
+            <a href="">Перейти в профиль</a>
+          </div>
+
+          <div class="asrt__card-cntct-btn">
+            <button class="btn-asrt-one">Позвонить</button>
+            <button class="btn-asrt-two">Написать</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="asrt__card">
+        <img src="image/cardGarage.svg" alt="">
+
+        <div class="asrt__card-dscr">
+          <a href="">Название.....</a>
+
+          <div class="asrt__card-dscr-pos">
+            <div class="metro-img">
+              <img class="" src="image/metro.png" alt="">
+            </div>
+            <p class="metro">Парнас</p>
+            <img class="metro-time-tchk" src="image/tochka.png" alt="">
+            <p class="metro-time">10 минут пешком</p>
+          </div>
+
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-gl">Сдается машиноместо в новом паркинге ЖК Малая охта.13.25 кв.м, -1 этаж с отдельным въездом с улицы.Прямой и быстрый въезд на место. Круглосуточное видеонаблюдение. Ворота открываются по брелку. Коммунальные платежи включены в стоимость.</p>
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-rub">2400 р</p>
+        </div>
+
+        <div class="asrt__card-cntct">
+          <div class="asrt__card-cntct-info">
+            <img src="image/profile__comments.svg" alt="">
+            <p>Вася Пупкин</p>
+            <a href="">Перейти в профиль</a>
+          </div>
+
+          <div class="asrt__card-cntct-btn">
+            <button class="btn-asrt-one">Позвонить</button>
+            <button class="btn-asrt-two">Написать</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="asrt__card">
+        <img src="image/cardGarage.svg" alt="">
+
+        <div class="asrt__card-dscr">
+          <a href="">Название.....</a>
+
+          <div class="asrt__card-dscr-pos">
+            <div class="metro-img">
+              <img class="" src="image/metro.png" alt="">
+            </div>
+            <p class="metro">Парнас</p>
+            <img class="metro-time-tchk" src="image/tochka.png" alt="">
+            <p class="metro-time">10 минут пешком</p>
+          </div>
+
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-gl">Сдается машиноместо в новом паркинге ЖК Малая охта.13.25 кв.м, -1 этаж с отдельным въездом с улицы.Прямой и быстрый въезд на место. Круглосуточное видеонаблюдение. Ворота открываются по брелку. Коммунальные платежи включены в стоимость.</p>
+          <div class="asrt__card-dscr-ln"></div>
+          <p class="asrt__card-dscr-rub">2400 р</p>
+        </div>
+
+        <div class="asrt__card-cntct">
+          <div class="asrt__card-cntct-info">
+            <img src="image/profile__comments.svg" alt="">
+            <p>Вася Пупкин</p>
+            <a href="">Перейти в профиль</a>
+          </div>
+
+          <div class="asrt__card-cntct-btn">
+            <button class="btn-asrt-one">Позвонить</button>
+            <button class="btn-asrt-two">Написать</button>
+          </div>
+        </div>
+      </div>
+
+      
+    
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="#">Наши контакты</a></li>
+          <li><a href="#">Наши услуги</a></li>
+          <li><a href="#">Политика Конфиденциальности</a></li>
+          <li><a href="#">Правила и условия</a></li>
+          <li><a href="#">Карьера</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        GARAGE Copyright © 2023 Garage - All rights reserved || Designed By: Belyaev
+      </div>
+    </div>
+  </footer>
+  <script src="script/asrt.js"></script>
+  <script src="script/header.js"></script>
+
+</body>
+
+</html>
